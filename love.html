@@ -1,103 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
 <title>I Love You ❤️</title>
-
 <style>
 body{
-    height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    background:linear-gradient(135deg,#ff758c,#ff7eb3);
-    font-family:Arial;
-    overflow:hidden;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:#ff7eb3;
+  font-family:Arial;
 }
-
-.container{
-    text-align:center;
-}
-
-.teddies{
-    position:relative;
-    height:120px;
-    margin-bottom:20px;
-}
-
-.teddy{
-    font-size:80px;
-    position:absolute;
-    top:20px;
-    animation:2s forwards;
-}
-
-.left{
-    left:-100px;
-    animation-name:leftHug;
-}
-
-.right{
-    right:-100px;
-    animation-name:rightHug;
-}
-
-@keyframes leftHug{
-    to{ left:130px; }
-}
-@keyframes rightHug{
-    to{ right:130px; }
-}
-
-/* Hearts animation */
-.heart{
-    position:absolute;
-    color:red;
-    font-size:20px;
-    animation:float 3s infinite;
-}
-
-@keyframes float{
-    0%{ transform:translateY(0); opacity:1; }
-    100%{ transform:translateY(-150px); opacity:0; }
-}
-
 h1{
-    color:white;
-    font-size:40px;
-    animation:pop 1s ease forwards;
-}
-
-@keyframes pop{
-    0%{ transform:scale(0); }
-    100%{ transform:scale(1); }
+  font-size:40px;
+  color:white;
 }
 </style>
 </head>
-
 <body>
-
-<div class="container">
-    <div class="teddies">
-        <div class="teddy left">🧸</div>
-        <div class="teddy right">🧸</div>
-    </div>
-    <h1>I LOVE YOU ❤️</h1>
-</div>
-
-<script>
-// create floating hearts
-setInterval(()=>{
-    const heart = document.createElement("div");
-    heart.className = "heart";
-    heart.innerHTML = "❤️";
-    heart.style.left = Math.random()*window.innerWidth + "px";
-    heart.style.bottom = "0px";
-    document.body.appendChild(heart);
-
-    setTimeout(()=>heart.remove(),3000);
-},300);
-</script>
-
+<h1>🧸🧸 I LOVE YOU ❤️</h1>
 </body>
 </html>
